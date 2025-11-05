@@ -1,16 +1,35 @@
-# hellow_github
+# 📦 Hello GitHub
 
-A new Flutter project.
+A Flutter application that allows users to search any GitHub username and explore their public repositories. Built using *GetX, **Dio, and the **GitHub REST API*.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📦 APK Download
 
-A few resources to get you started if this is your first Flutter project:
+You can download the latest APK file here:  
+👉 [**Download Order Management APK**](https://github.com/Zaminur151/Order-Management/releases/download/v1.0/app-release.apk)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✨ Features
+
+- Search GitHub users by username  
+- View user profile information  
+- Show repositories in *List & Grid view*  
+- Filter repositories (by name, date, or stars)  
+- Light & Dark Theme with persistent state using GetStorage  
+- View detailed repository info  
+- Proper error handling 
+
+---
+
+## 🧑‍💻 Tech Stack
+
+| Feature | Package |
+|--------|----------|
+| State Management | GetX |
+| API Handling | Dio |
+| Local Storage | GetStorage |
+| Date Formatting | intl |
+
+---
