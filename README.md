@@ -1,13 +1,13 @@
-# 📦 Hello GitHub
+# Hello GitHub
 
 A Flutter application that allows users to search any GitHub username and explore their public repositories. Built using *GetX, **Dio, and the **GitHub REST API*.
 
 ---
 
-## 📦 APK Download
+## APK Download
 
 You can download the latest APK file here:  
-👉 [**Download Order Management APK**](https://github.com/Zaminur151/Order-Management/releases/download/v1.0/app-release.apk)
+👉 [**Download Order Management APK**](https://github.com/Zaminur151/Hello-GitHub/releases/download/v0.0.1/app-release.apk)
 
 ---
 
