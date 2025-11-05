@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-
 import '../models/repo_model.dart';
 
 class RepoGridItem extends StatelessWidget {
   final RepoModel repo;
-  const RepoGridItem({required this.repo});
+  const RepoGridItem({super.key, required this.repo});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class RepoGridItem extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('⭐ ${repo.stargazersCount}'),
+                Text('Star: ${repo.stargazersCount}'),
                 Text(DateFormat.yMMMd().format(repo.updatedAt)),
               ],
             )

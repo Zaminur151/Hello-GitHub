@@ -1,7 +1,5 @@
 import 'package:get/get.dart';
 import 'package:dio/dio.dart';
-import 'package:intl/intl.dart';
-
 import '../services/api_service.dart';
 import '../models/repo_model.dart';
 
@@ -25,7 +23,7 @@ class RepoController extends GetxController {
       final List data = response.data as List;
       repos.value = data.map((e) => RepoModel.fromJson(e)).toList();
       applyFilters();
-    } on DioError catch (e) {
+    } on DioException catch (e) {
       if (e.response?.statusCode == 404) {
         error.value = 'Repositories not found';
       } else {

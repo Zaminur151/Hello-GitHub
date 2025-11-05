@@ -44,7 +44,6 @@ class LoginScreen extends StatelessWidget {
               }
               final isUserExist = await userController.fetchUser(username);
               if(isUserExist){
-                print('user ==== $isUserExist');
                 Get.to(() => HomePage(userName: username,));
               }else{
                 Get.snackbar('Error', userController.error.value?? 'Unknown error');

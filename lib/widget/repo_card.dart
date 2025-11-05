@@ -23,7 +23,7 @@ class RepoCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('⭐ ${repo.stargazersCount}'),
+                Text('Stars: ${repo.stargazersCount}'),
                 Text('Forks: ${repo.forksCount}'),
                 Text(DateFormat.yMMMd().format(repo.updatedAt)),
               ],

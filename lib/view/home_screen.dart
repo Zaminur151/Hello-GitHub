@@ -10,7 +10,7 @@ import '../controllers/theme_controller.dart';
 
 class HomePage extends StatelessWidget {
   final String userName;
-  HomePage({required this.userName});
+  HomePage({super.key, required this.userName});
 
   final userController = Get.find<UserController>();
   final repoController = Get.put(RepoController());
