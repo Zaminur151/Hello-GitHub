@@ -15,4 +15,7 @@ class ApiService {
   Future getUser(String userName) async{
     return _dio.get('/users/$userName');
   }
+  Future getRepos(String userName) async{
+    return _dio.get('/users/$userName/repos');
+  }
 }

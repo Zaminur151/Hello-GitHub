@@ -3,6 +3,7 @@ import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:hellow_github/controllers/theme_controller.dart';
 import 'package:get/get.dart';
 import 'package:hellow_github/controllers/user_controller.dart';
+import 'package:hellow_github/view/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
@@ -44,7 +45,7 @@ class LoginScreen extends StatelessWidget {
               final isUserExist = await userController.fetchUser(username);
               if(isUserExist){
                 print('user ==== $isUserExist');
-                //Get.to(() => HomeScreen())
+                Get.to(() => HomePage(userName: username,));
               }else{
                 Get.snackbar('Error', userController.error.value?? 'Unknown error');
               }
