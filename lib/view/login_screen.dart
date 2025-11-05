@@ -28,6 +28,7 @@ class LoginScreen extends StatelessWidget {
       body: Center(
         child: Padding(padding: EdgeInsets.all(12),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
               controller: _controller,
@@ -36,6 +37,7 @@ class LoginScreen extends StatelessWidget {
                 border: OutlineInputBorder()
               ),
             ),
+            const SizedBox(height: 20,),
             ElevatedButton(onPressed: ()async{
               final username = _controller.text.trim();
               if(username.isEmpty){
